@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Bing</title>
+<style>
+    body
+    {
+     background-image:url('BG.jpeg');
+     background-repeat:no-repeat;
+     background-size: auto 1000px;
+    }
+
+    form{
+      margin-left:30%;
+      margin-top: 10%;
+    }
+    input{
+      width: 500px; 
+      padding: 20px;
+      border-radius:20px;
+      border-color: rgb(120, 195, 224);
+      background-color: rgb(206, 213, 233);
+    }
+   
+
+.dropbtn {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #a0a8d8;
+}
+
+</style>
+</head>
+
+<body>
+   <p>
+       <img src="微软图标.jpeg" style="float:left" width="120" height="40">
+   </p>
+
+  
+  <div class="dropdown">
+    <button class="dropbtn">picture</button>
+    <div class="dropdown-content">
+      <a href="https://cn.bing.com/">human</a>
+      <a href="https://cn.bing.com/">plant</a>
+      <a href="https://cn.bing.com/">animal</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">video</button>
+    <div class="dropdown-content">
+      <a href="https://cn.bing.com/">short</a>
+      <a href="https://cn.bing.com/">long</a>
+      <a href="https://cn.bing.com/">film</a>
+      <a href="https://cn.bing.com/">MV</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">more</button>
+    <div class="dropdown-content">
+      <a href="https://cn.bing.com/">map</a>
+      <a href="https://cn.bing.com/">news</a>
+    </div>
+  </div>
+  </div>
+  <form action="demo-form.php" >
+    <input type="search" name="Bingsearch" >
+    <button style="width: px;padding: 18px;border-radius:20px;border-color: slategray;font-size: 17px;">搜索</button>
+  </form>
+  
+
+</body>
+</html>
