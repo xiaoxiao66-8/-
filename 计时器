@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <style>
+          div{
+              text-align: center;
+              font-size: 100px;
+              padding:100px;
+          }
+
+          button{
+            display:block;
+            margin:50px auto;
+            width:500px;
+            height:100px;
+            font-size: 30px}
+
+          span{color: rgb(216, 33, 33);}
+        </style>
+        <body>
+            <button onlick="timing()">点击计时/暂停</button>
+            <div id="demo"></div>
+            <script>       
+        
+        function timing() {
+            var oBody = document.getElementById("demo");
+            var i = 0;
+            setInterval(updateNum, 1000);
+            updateNum();
+
+            function updateNum() {
+                var j = i++;
+                oBody.innerHTML = "Time passed: " + "<span>" + j + "</span>" + " s";
+            }
+        }
+            </script>
+        </body>
+    </head>
+</html>
