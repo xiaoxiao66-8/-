@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>数组练习</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <p>practice1:insert Lemon and Pinapple item into array["Banana","Orange","Apple","Mango"]and retrograde sort the new array</p>
+        <div style="background-color: rgb(241, 172, 195);">
+            <script>
+                var fruits = ["Banana", "Orange", "Apple", "Mango"];
+                fruits.splice(3,0,"lemon");
+                fruits.splice(0,0,"pinapple");
+                for (i=0;i<fruits.length;i++){
+                    document.write("·"+fruits[i] + "<br />");
+                }
+                </script>
+        </div>
+        <p>practice2:Sort array[40,100,1,5,25,10]</p>
+<div style="background-color: rgb(155, 240, 169);">
+    <script>
+        var shuzi = [40,100,1,5,25,10];
+        shuzi.sort(function(a,b){return a-b});
+        document.write(shuzi);
+        </script> 
+        </div>
+
+        <p>practice3:Sort [{type:"Volvo",year:2016},{type:"Saab",year:2001},{type:"BMW",year：2010}]by year</p>
+<div style="background-color: rgb(243, 241, 145);">
+         <p>Saab:2001</p>
+         <p>BWM:2010</p>
+         <p>Volvo:2016</p>
+        </div>
+
+        <p>practice4:Output array[4,9,16,25]with a style of index:value</p>
+        <div style="background-color: rgb(151, 169, 228);">
+            <p>index0: 4</p>
+            <p>index1: 9</p>
+            <p>index2: 16</p>
+            <p>index3: 25</p> 
+                </div>
+    </body>
+</html>
